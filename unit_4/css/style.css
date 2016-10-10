@@ -1,10 +1,5 @@
-<style>
-	@import 'https://fonts.googleapis.com/css?family=Coda';
-</style>
-
-<style>
+@import 'https://fonts.googleapis.com/css?family=Coda';
 @import 'https://fonts.googleapis.com/css?family=Scope+One';
-</style>
 
 /*COLORS: 
 Logo and text: #000000
@@ -40,14 +35,15 @@ h1{
 	font-size: 4em;
 }
 
-h3{
+h2{
 	font-family: 'Coda', cursive;
 	text-transform: uppercase;
-	color: #A7EC43
+	color: #A7EC43;
 }
 
-h5{
+blockquote {
 	color: #817B8C;
+	margin-bottom:1em;
 }
 
 hr {
@@ -58,13 +54,14 @@ hr {
 	margin: 0.4em auto;
 }
 
-img {
-	width: 30em;
+#about img {
+	width: 45%;
+	float: left;
 }
 
-section{
+#about div{
 	float: right;
-	max-width: 55%;
+	width: 55%;
 }
 
 .sectiontitle{
@@ -74,7 +71,15 @@ section{
 #lander{
 	margin: 1em;
 }
-
+#about {
+	margin:auto;
+	padding:4em 0;
+	width:1200px;
+}
+#portfolio img {
+	float:left;
+	width:20%;
+}
 
 .navlinks{
 	text-decoration: none;
@@ -141,7 +146,13 @@ section{
 .active, .dot:hover {
   background-color: #A7EC43;
 }
-
+.clearfix:after {
+	content:"";
+	display:block;
+	visibility:hidden;
+	height:0;
+	clear:both;
+}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
