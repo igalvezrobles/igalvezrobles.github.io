@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Inma G's Photography</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<style>
+	@import 'https://fonts.googleapis.com/css?family=Coda';
+	</style>
+
+	<style>
+	@import 'https://fonts.googleapis.com/css?family=Maitree';
+	</style>
+</head>
+
+<body>
+	<div id="lander">
+            <nav>
+                <a class="navlinks" href="#">home</a>
+                <a class="navlinks" href="#">about me</a>
+                <a class="navlinks" href="#">portfolio</a>
+                <a class="navlinks" href="#">contact</a>
+            </nav>
+
+            <header>
+                <h1>INMA G</h1>
+            </header>
+    </div>
+
+    <figure>
+		<div class="slideshow-container">
+		  <div class="mySlides fade">
+		    <img src="images/img1.jpg" alt="couple" title="LOVE" style="width:100%">
+		  </div>
+
+		  <div class="mySlides fade">
+		    <img src="images/img2.jpg" alt="cabaret event" title="EVENTS" style="width:100%">
+		  </div>
+
+		  <div class="mySlides fade">
+		    <img src="images/img3.jpg" alt="purse, watch and bracelet" title="FASHION" style="width:100%">
+		  </div>
+
+		  <div class="mySlides fade">
+		    <img src="images/img4.jpg" alt="face" title="PORTRAIT" style="width:100%">
+		  </div>
+
+		  <div class="mySlides fade">
+		    <img src="images/img5.jpg" alt="skyline" title="MISCELLANEOUS" style="width:100%">
+		  </div>
+
+		  <div class="mySlides fade">
+		    <img src="images/img6.jpg" alt="stationery" title="DESIGN" style="width:100%">
+		  </div>
+
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		  <span class="dot" onclick="currentSlide(4)"></span> 
+		  <span class="dot" onclick="currentSlide(5)"></span> 
+		  <span class="dot" onclick="currentSlide(6)"></span> 
+		</div>
+	</figure>
+
+	<script type="text/javascript">var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1} 
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none"; 
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block"; 
+		  dots[slideIndex-1].className += " active";
+	}</script>
+
+
+	<main>
+
+		<h3 class="sectiontitle">about me</h3>
+
+		<img src="images/me.png" alt="This is me" title="InmaG">
+
+		<section>
+		
+    	<h5>"Photography is the story I fail to put into words"</h5>
+                
+        <hr>
+
+		<h5>Destin Sparks</h5>
+
+		<p>Hi there! I'm Inma.<br> 
+		I'm a big fish that walks around with a camera.<br>
+		I'm insanely passionate about communication and everything visual.<br>
+		I &hearts; watching TV shows, movies, videos of puppies and babies, listening to music, walking around museums and eating coconut dreams.
+		</section>
+
+	</main>	
+
+	<footer>
+
+	</footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<style>
+	@import 'https://fonts.googleapis.com/css?family=Coda';
+</style>
+
+<style>
+@import 'https://fonts.googleapis.com/css?family=Scope+One';
+</style>
+
+/*COLORS: 
+Logo and text: #000000
+Nav, titles and links: #A7EC43
+Other: #817B8C
+Other lighter: #C1B5C1 */
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+header{
+
+}
+
+nav{
+	font-family: 'Coda', cursive;
+	text-transform: uppercase;
+}
+
+body {
+ 	background-color: #fff;
+ 	font-family: 'Maitree', serif;
+	font-size: 18px; /*1em = 18px*/
+	text-align: center;
+	position: relative;
+}
+
+h1{
+	font-family: 'Maitree', cursive;
+	font-size: 4em;
+}
+
+h3{
+	font-family: 'Coda', cursive;
+	text-transform: uppercase;
+	color: #A7EC43
+}
+
+h5{
+	color: #817B8C;
+}
+
+hr {
+	border:none;
+  	width: 8em;
+	height:2px;
+	background-color: #A7EC43;
+	margin: 0.4em auto;
+}
+
+img {
+	width: 30em;
+}
+
+section{
+	float: right;
+	max-width: 55%;
+}
+
+.sectiontitle{
+	margin-bottom: 3em;
+}
+
+#lander{
+	margin: 1em;
+}
+
+
+.navlinks{
+	text-decoration: none;
+	padding-right: 2em;
+	padding-left: 2em;
+	color: #C1B5C1;
+}
+
+.navlinks:hover{
+	background-color: #A7EC43;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next & prev button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(167,236,67,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 0.6em;
+  width: 0.6em;
+  margin: 0em 0.4em 12em 0em ;
+  background-color: #C1B5C1;
+  border-radius: 60%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #A7EC43;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
