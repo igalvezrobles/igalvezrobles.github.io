@@ -14,47 +14,8 @@
 		</nav>
 		<h1>INMA G</h1>
 	</header>
-	<figure>
-		<div class="slideshow-container">
-			<div class="mySlides fade">
-				<img src="images/img1.jpg" alt="couple" title="LOVE" style="width:100%">
-			</div>
-
-		  <div class="mySlides fade">
-		    <img src="images/img2.jpg" alt="cabaret event" title="EVENTS" style="width:100%">
-		  </div>
-
-		  <div class="mySlides fade">
-		    <img src="images/img3.jpg" alt="purse, watch and bracelet" title="FASHION" style="width:100%">
-		  </div>
-
-		  <div class="mySlides fade">
-		    <img src="images/img4.jpg" alt="face" title="PORTRAIT" style="width:100%">
-		  </div>
-
-		  <div class="mySlides fade">
-		    <img src="images/img5.jpg" alt="skyline" title="MISCELLANEOUS" style="width:100%">
-		  </div>
-
-		  <div class="mySlides fade">
-		    <img src="images/img6.jpg" alt="stationery" title="DESIGN" style="width:100%">
-		  </div>
-
-		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-		</div>
-		<br>
-
-		<div style="text-align:center">
-		  <span class="dot" onclick="currentSlide(1)"></span> 
-		  <span class="dot" onclick="currentSlide(2)"></span> 
-		  <span class="dot" onclick="currentSlide(3)"></span> 
-		  <span class="dot" onclick="currentSlide(4)"></span> 
-		  <span class="dot" onclick="currentSlide(5)"></span> 
-		  <span class="dot" onclick="currentSlide(6)"></span> 
-		</div>
-	</figure>
-	<section id="about">
+	<img src="images/img1.jpg" alt="couple" title="LOVE" style="width:100%">
+	<section id="about" class="clearfix">
 		<h2 class="sectiontitle">about me</h2>
 		<img src="images/me.png" alt="This is me" title="InmaG">
 		<div>
@@ -65,35 +26,16 @@
 			</blockquote>
 			<p>Hi there! I'm Inma. I'm a big fish that walks around with a camera. I'm insanely passionate about communication and everything visual. I &hearts; watching TV shows, movies, videos of puppies and babies, listening to music, walking around museums and eating coconut dreams.</p>
 		</div>
-	</section>	
+	</section>
+	<section id="portfolio" class="clearfix">
+		<img src="images/img2.jpg" alt="cabaret event" title="EVENTS">
+		<img src="images/img3.jpg" alt="purse, watch and bracelet" title="FASHION">
+		<img src="images/img4.jpg" alt="face" title="PORTRAIT">
+		<img src="images/img5.jpg" alt="skyline" title="MISCELLANEOUS">
+		<img src="images/img6.jpg" alt="stationery" title="DESIGN">
+	</section>
 	<footer>
 
 	</footer>
-	<script type="text/javascript">var slideIndex = 1;
-		showSlides(slideIndex);
-
-		function plusSlides(n) {
-		  showSlides(slideIndex += n);
-		}
-
-		function currentSlide(n) {
-		  showSlides(slideIndex = n);
-		}
-
-		function showSlides(n) {
-		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("dot");
-		  if (n > slides.length) {slideIndex = 1} 
-		  if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-		      slides[i].style.display = "none"; 
-		  }
-		  for (i = 0; i < dots.length; i++) {
-		      dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "block"; 
-		  dots[slideIndex-1].className += " active";
-	}</script>
 </body>
 </html>
