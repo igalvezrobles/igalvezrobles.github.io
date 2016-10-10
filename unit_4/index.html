@@ -1,39 +1,24 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Inma G's Photography</title>
-
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	<style>
-	@import 'https://fonts.googleapis.com/css?family=Coda';
-	</style>
-
-	<style>
-	@import 'https://fonts.googleapis.com/css?family=Maitree';
-	</style>
 </head>
-
 <body>
-	<div id="lander">
-            <nav>
-                <a class="navlinks" href="#">home</a>
-                <a class="navlinks" href="#">about me</a>
-                <a class="navlinks" href="#">portfolio</a>
-                <a class="navlinks" href="#">contact</a>
-            </nav>
-
-            <header>
-                <h1>INMA G</h1>
-            </header>
-    </div>
-
-    <figure>
+	<header>
+		<nav>
+        	        <a class="navlinks" href="#">home</a>
+               		<a class="navlinks" href="#">about me</a>
+                	<a class="navlinks" href="#">portfolio</a>
+                	<a class="navlinks" href="#">contact</a>
+		</nav>
+		<h1>INMA G</h1>
+	</header>
+	<figure>
 		<div class="slideshow-container">
-		  <div class="mySlides fade">
-		    <img src="images/img1.jpg" alt="couple" title="LOVE" style="width:100%">
-		  </div>
+			<div class="mySlides fade">
+				<img src="images/img1.jpg" alt="couple" title="LOVE" style="width:100%">
+			</div>
 
 		  <div class="mySlides fade">
 		    <img src="images/img2.jpg" alt="cabaret event" title="EVENTS" style="width:100%">
@@ -69,7 +54,21 @@
 		  <span class="dot" onclick="currentSlide(6)"></span> 
 		</div>
 	</figure>
+	<section id="about">
+		<h2 class="sectiontitle">about me</h2>
+		<img src="images/me.png" alt="This is me" title="InmaG">
+		<div>
+			<blockquote>
+				<p>Photography is the story I fail to put into words</p>
+				<hr>
+				<cite>Destin Sparks</cite>
+			</blockquote>
+			<p>Hi there! I'm Inma. I'm a big fish that walks around with a camera. I'm insanely passionate about communication and everything visual. I &hearts; watching TV shows, movies, videos of puppies and babies, listening to music, walking around museums and eating coconut dreams.</p>
+		</div>
+	</section>	
+	<footer>
 
+	</footer>
 	<script type="text/javascript">var slideIndex = 1;
 		showSlides(slideIndex);
 
@@ -96,36 +95,5 @@
 		  slides[slideIndex-1].style.display = "block"; 
 		  dots[slideIndex-1].className += " active";
 	}</script>
-
-
-	<main>
-
-		<h3 class="sectiontitle">about me</h3>
-
-		<img src="images/me.png" alt="This is me" title="InmaG">
-
-		<section>
-		
-    	<h5>"Photography is the story I fail to put into words"</h5>
-                
-        <hr>
-
-		<h5>Destin Sparks</h5>
-
-		<p>Hi there! I'm Inma.<br> 
-		I'm a big fish that walks around with a camera.<br>
-		I'm insanely passionate about communication and everything visual.<br>
-		I &hearts; watching TV shows, movies, videos of puppies and babies, listening to music, walking around museums and eating coconut dreams.
-		</section>
-
-	</main>	
-
-	<footer>
-
-	</footer>
-
-
-
 </body>
-
 </html>
