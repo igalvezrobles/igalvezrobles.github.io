@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Coda';
-@import 'https://fonts.googleapis.com/css?family=Scope+One';
+@import 'https://fonts.googleapis.com/css?family=Glegoo';
 
 /*COLORS: 
 Logo and text: #000000
@@ -20,19 +20,22 @@ header{
 nav{
 	font-family: 'Coda', cursive;
 	text-transform: uppercase;
+	margin-top: 0.5em;
 }
 
 body {
  	background-color: #fff;
- 	font-family: 'Maitree', serif;
+ 	font-family: 'Glegoo', serif;
 	font-size: 18px; /*1em = 18px*/
 	text-align: center;
 	position: relative;
 }
 
 h1{
-	font-family: 'Maitree', cursive;
+	font-family: 'Glegoo', serif;
 	font-size: 4em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 h2{
@@ -54,31 +57,17 @@ hr {
 	margin: 0.4em auto;
 }
 
-#about img {
-	width: 45%;
-	float: left;
-}
-
-#about div{
-	float: right;
-	width: 55%;
+p{
+	font-size: 16px
 }
 
 .sectiontitle{
-	margin-bottom: 3em;
+	margin-bottom: 2em;
+	margin-top: 2em;
 }
 
-#lander{
-	margin: 1em;
-}
-#about {
-	margin:auto;
-	padding:4em 0;
-	width:1200px;
-}
-#portfolio img {
-	float:left;
-	width:20%;
+.clearfix{
+	overflow: auto;
 }
 
 .navlinks{
@@ -92,82 +81,40 @@ hr {
 	background-color: #A7EC43;
 }
 
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
+.button{
+	width: 2em;
+	margin: 0.8em;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+#bgimage {
+	width: 100%;
 }
 
-/* Position the "next & prev button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+#about img {
+	width: 45%;
+	float: left;
 }
 
-.prev {
-  left: 0;
-  border-radius: 3px 0 0 3px;
+#about div{
+	float: right;
+	width: 55%;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(167,236,67,0.8);
+#about {
+	margin:auto;
+	padding:4em 0;
+	width:1200px;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 0.6em;
-  width: 0.6em;
-  margin: 0em 0.4em 12em 0em ;
-  background-color: #C1B5C1;
-  border-radius: 60%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+#portfolio{
+	margin:auto;
 }
 
-.active, .dot:hover {
-  background-color: #A7EC43;
-}
-.clearfix:after {
-	content:"";
-	display:block;
-	visibility:hidden;
-	height:0;
-	clear:both;
-}
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+#portfolio img {
+	width:31%;
+	margin: 15px 10px 15px 10px;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+#contactme{
+	margin: 4em 0em 0.5em 0em;
 }
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
