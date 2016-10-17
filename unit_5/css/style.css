@@ -1,124 +1,27 @@
-@import 'https://fonts.googleapis.com/css?family=Coda';
-@import 'https://fonts.googleapis.com/css?family=Glegoo';
-
-/*COLORS: 
-Logo and text: #000000
-Nav, titles and links: #A7EC43
-Other: #817B8C
-Other lighter: #C1B5C1 */
-
-*{
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
+section img{
+	width: 200px;
 }
 
-header{background: url(../images/indexbg.jpg);background-size: cover;height: 95vh;}
+footer img{
+	width: 50px;
+}
+
+header{
+	background-color: #FFED74;
+}
 
 nav{
-	font-family: 'Coda', cursive;
-	text-transform: uppercase;
-	padding-top: 0.5em;
+	background-color: #E8C66A;
 }
 
-body {
- 	background-color: #fff;
- 	font-family: 'Glegoo', serif;
-	font-size: 18px; /*1em = 18px*/
-	text-align: center;
-	position: relative;
+div{
+	background-color: #FFE2B8;
 }
 
-h1{
-	font-family: 'Glegoo', serif;
-	font-size: 4em;
-	margin-top: 1em;
-	margin-bottom: 1em;
+section{
+	background-color: #FFE2B8;
 }
 
-h2{
-	font-family: 'Coda', cursive;
-	text-transform: uppercase;
-	color: #A7EC43;
-}
-
-blockquote {
-	color: #817B8C;
-	margin-bottom:1em;
-}
-
-hr {
-	border:none;
-  	width: 8em;
-	height:2px;
-	background-color: #A7EC43;
-	margin: 0.4em auto;
-}
-
-p{
-	font-size: 16px
-}
-
-.sectiontitle{
-	margin-bottom: 2em;
-	margin-top: 2em;
-}
-
-.clearfix:after {
-	clear:both;
-	display:block;
-	visibility:hidden;
-	height:0;
-	content:"";
-}
-
-.navlinks{
-	text-decoration: none;
-	padding-right: 2em;
-	padding-left: 2em;
-	color: #C1B5C1;
-}
-
-.navlinks:hover{
-	background-color: #A7EC43;
-}
-
-.button{
-	width: 2em;
-	margin: 0.8em;
-}
-
-#bgimage {
-	width: 100%;
-}
-
-#about img {
-	width: 45%;
-	float: left;
-}
-
-#about div{
-	float: left;
-	width: 65%;
-	margin-left: -10%;
-}
-
-#about {
-	margin:auto;
-	padding:4em 0;
-	width:1200px;
-}
-
-#portfolio{
-	margin:auto;
-}
-
-#portfolio img {
-	width: 33.33%;
-	padding: .25em;
-	float: left;
-}
-
-#contactme{
-	margin: 4em 0em 0.5em 0em;
+footer{
+	background-color: #FF957E;
 }
