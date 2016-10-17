@@ -13,14 +13,12 @@ Other lighter: #C1B5C1 */
 	box-sizing:border-box;
 }
 
-header{
-
-}
+header{background: url(../images/indexbg.jpg);background-size: cover;height: 95vh;}
 
 nav{
 	font-family: 'Coda', cursive;
 	text-transform: uppercase;
-	margin-top: 0.5em;
+	padding-top: 0.5em;
 }
 
 body {
@@ -66,8 +64,12 @@ p{
 	margin-top: 2em;
 }
 
-.clearfix{
-	overflow: auto;
+.clearfix:after {
+	clear:both;
+	display:block;
+	visibility:hidden;
+	height:0;
+	content:"";
 }
 
 .navlinks{
@@ -96,8 +98,9 @@ p{
 }
 
 #about div{
-	float: right;
-	width: 55%;
+	float: left;
+	width: 65%;
+	margin-left: -10%;
 }
 
 #about {
@@ -111,8 +114,9 @@ p{
 }
 
 #portfolio img {
-	width:31%;
-	margin: 15px 10px 15px 10px;
+	width: 33.33%;
+	padding: .25em;
+	float: left;
 }
 
 #contactme{
