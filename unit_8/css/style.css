@@ -1,0 +1,192 @@
+@import 'https://fonts.googleapis.com/css?family=Coda';
+@import 'https://fonts.googleapis.com/css?family=Glegoo';
+
+/*COLORS: 
+Logo and text: #000000
+Nav, titles and links: #A7EC43
+Other: #817B8C
+Other lighter: #C1B5C1 */
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+header{
+	background: url(../images/indexbg.jpg);
+	background-size: cover;
+	height: 95vh;
+}
+
+nav{
+	font-family: 'Coda', cursive;
+	text-transform: uppercase;
+	padding-top: 0.5em;
+}
+
+label{
+	font-family: 'Coda', cursive;
+	text-transform: uppercase;
+	padding-top: 0.5em;
+	display: none;
+}
+
+body {
+ 	background-color: #fff;
+ 	font-family: 'Glegoo', serif;
+	font-size: 18px; /*1em = 18px*/
+	text-align: center;
+	position: relative;
+}
+
+h1{
+	font-family: 'Glegoo', serif;
+	font-size: 4em;
+	margin: 2.5em 0em; 
+}
+
+h2{
+	font-family: 'Coda', cursive;
+	text-transform: uppercase;
+	color: #A7EC43;
+}
+
+blockquote {
+	color: #817B8C;
+	margin-bottom:1em;
+}
+
+hr {
+	border:none;
+  	width: 8em;
+	height:2px;
+	background-color: #A7EC43;
+	margin: 0.4em auto;
+}
+
+p{
+	font-size: .9em;
+}
+
+footer{
+	background-color: rgba(220,220,220,.5);
+}
+
+.sectiontitle{
+	margin: 2em 0em;
+}
+
+.clearfix:after {
+	clear:both;
+	display:block;
+	visibility:hidden;
+	height:0;
+	content:"";
+}
+
+.navlinks{
+	text-decoration: none;
+	padding: 0em 2em;
+	color: #C1B5C1;
+}
+
+.navlinks:hover{
+	background-color: #A7EC43;
+}
+
+.button{
+	width: 1.8em;
+	margin: 0.8em;
+}
+
+
+#about img {
+	width: 45%;
+	float: left;
+}
+
+#about div{
+	float: left;
+	width: 65%;
+	margin-left: -10%;
+}
+
+#about {
+	margin:auto;
+	padding:4em 0;
+	width: 90%;
+}
+
+#aboutlink{
+	font-family: 'Coda', cursive;
+	color: #817B8C;
+	font-size: .8em;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	padding-top: 4em;
+}
+
+#portfolio{
+	width: 95%;
+	margin:auto;
+}
+
+#portfolio img {
+	width: 33.33%;
+	padding: .25em;
+	float: left;
+}
+
+#contactme{
+	margin: 4em 0em .5em;
+}
+
+#toggle{
+	display: none;
+}
+
+
+@media only screen and (max-width: 800px){
+	#about img, #about div{
+		float: none;
+		margin: auto;
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	body{
+		font-size: 16px;
+	}
+	.navlinks{
+		padding: 0em .8em;
+	}
+	#portfolio img {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	p{
+		text-align: justify;
+	}
+	nav{
+		display: none;
+	}
+	label{
+		display: block;
+	}
+	.navlinks{
+		display: block;
+		padding: .6em;
+	}
+	#portfolio img {
+		float:none;
+		width: 100%;
+	}
+	#toggle:checked + nav{
+		display: block;
+	}
+}
