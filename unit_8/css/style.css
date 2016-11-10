@@ -25,13 +25,6 @@ nav{
 	padding-top: 0.5em;
 }
 
-label{
-	font-family: 'Coda', cursive;
-	text-transform: uppercase;
-	padding-top: 0.5em;
-	display: none;
-}
-
 body {
  	background-color: #fff;
  	font-family: 'Glegoo', serif;
@@ -143,9 +136,7 @@ footer{
 	margin: 4em 0em .5em;
 }
 
-#toggle{
-	display: none;
-}
+
 
 
 @media only screen and (max-width: 800px){
@@ -173,20 +164,18 @@ footer{
 		text-align: justify;
 	}
 	nav{
-		display: none;
-	}
-	label{
-		display: block;
+		width: 100%;
 	}
 	.navlinks{
 		display: block;
+		background-color: #000;
+		border:1px #fff solid;
 		padding: .6em;
+		width: 50%;
+		float:left;
 	}
 	#portfolio img {
 		float:none;
 		width: 100%;
-	}
-	#toggle:checked + nav{
-		display: block;
 	}
 }
