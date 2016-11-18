@@ -13,7 +13,11 @@ Other lighter: #C1B5C1 */
 	box-sizing:border-box;
 }
 
-header{background: url(../images/indexbg.jpg);background-size: cover;height: 95vh;}
+header{
+	background: url(../images/indexbg.jpg);
+	background-size: cover;
+	height: 95vh;
+}
 
 nav{
 	font-family: 'Coda', cursive;
@@ -55,7 +59,11 @@ hr {
 }
 
 p{
-	font-size: 16px
+	font-size: .9em;
+}
+
+footer{
+	background-color: rgba(220,220,220,.5);
 }
 
 .sectiontitle{
@@ -100,12 +108,13 @@ p{
 #about {
 	margin:auto;
 	padding:4em 0;
-	width: 100%;
+	width: 90%;
 }
 
 #aboutlink{
+	font-family: 'Coda', cursive;
 	color: #817B8C;
-	font-size: 0.7em;
+	font-size: .8em;
 	text-decoration: none;
 	text-transform: uppercase;
 	display: inline-block;
@@ -113,6 +122,7 @@ p{
 }
 
 #portfolio{
+	width: 95%;
 	margin:auto;
 }
 
@@ -123,5 +133,48 @@ p{
 }
 
 #contactme{
-	margin: 4em 0em 0.5em 0em;
+	margin: 4em 0em .5em;
+}
+
+
+
+
+@media only screen and (max-width: 800px){
+	#about img, #about div{
+		float: none;
+		margin: auto;
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	body{
+		font-size: 16px;
+	}
+	.navlinks{
+		padding: 0em .8em;
+	}
+	#portfolio img {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	p{
+		text-align: justify;
+	}
+	nav{
+		width: 100%;
+	}
+	.navlinks{
+		background-color: #000;
+		border:1px #fff solid;
+		padding: .6em;
+		width: 50%;
+		float:left;
+	}
+	#portfolio img {
+		float:none;
+		width: 100%;
+	}
 }
