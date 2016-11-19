@@ -93,6 +93,9 @@ footer{
 	margin: 0.8em;
 }
 
+#home{
+	display: none;
+}
 
 #about img {
 	width: 45%;
@@ -172,6 +175,9 @@ footer{
 		padding: .6em;
 		width: 50%;
 		float:left;
+	}
+	#home{
+		display: block;
 	}
 	#portfolio img {
 		float:none;
