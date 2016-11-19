@@ -48,12 +48,12 @@ h1 a{
 
 div img{
 	width: 100%;
-	padding: 10em 1em 2em;
+	padding: 10em 1em 1em;
 }
 
 main{
 	width: 100%;
-	padding: 9em 1em 2em;
+	padding: 9em .5em 2em;
 }
 
 p{
@@ -103,4 +103,53 @@ footer{
 
 #lander{
 	text-align: right;
+}
+
+
+
+@media only screen and (max-width: 885px){
+	.navlinks{
+		font-size: .9em;
+		padding: 1em;
+	}
+}
+
+@media only screen and (max-width: 720px){
+	#pic{
+		float: none;
+		width: 85%;
+		margin: auto;
+	}
+	main{
+	width: 100%;
+	padding: 1em .5em 2em;
+	}
+}
+
+@media only screen and (max-width: 620px){
+	#lander{
+		text-align: center;
+	}
+	.navlinks{
+		padding: 1em .5em;
+	}
+}
+
+@media only screen and (max-width: 510px){
+	h1{
+		text-align: center;
+	}
+	h2{
+		font-size: 1em;
+		margin: 9em 0em 1em 0em;
+	}
+	.navlinks{
+		text-align: center;
+		padding: .6em;
+		width: 33.33%;
+		float:left;
+	}
+	#cinfo{
+		display: none;
+	}
 }
