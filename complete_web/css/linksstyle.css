@@ -121,16 +121,19 @@ footer{
 
 @media only screen and (max-width: 510px){
 	h1{
-		float:right;
+		text-align: center;
 	}
 	h2{
 		font-size: 1em;
-		margin: 13em 0em 1em 0em;
+		margin: 9em 0em 1em 0em;
 	}
 	.navlinks{
 		text-align: center;
 		padding: .6em;
-		width: 50%;
+		width: 33.33%;
 		float:left;
+	}
+	#cinfo{
+		display: none;
 	}
 }
