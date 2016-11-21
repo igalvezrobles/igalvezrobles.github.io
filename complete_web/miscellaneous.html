@@ -3,6 +3,16 @@
 	<title>Inma G Photography</title>
 	<link rel="stylesheet" type="text/css" href="css/linksstyle.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 </head>
 <body>
 	<header>
@@ -23,7 +33,21 @@
 	<main>
 		<h2>MISCELLANEOUS</h2>
 		<div class="clearfix">
-			<img src="images/miscellaneous/1.jpg" alt="#" title="#">
+			<a class="fancybox" rel="group" href="images/miscellaneous/1.jpg"><img src="images/miscellaneous/1.jpg" alt="picture of a building" title="Paris"/></a>
+			<a class="fancybox" rel="group" href="images/miscellaneous/2.jpg"><img src="images/miscellaneous/2.jpg" alt="picture of a room" title="Paris"/></a>
+			<a class="fancybox" rel="group" href="images/miscellaneous/3.jpg"><img src="images/miscellaneous/3.jpg" alt="eiffel tower at night" title="Paris"/></a>
+			<a class="fancybox" rel="group" href="images/miscellaneous/4.jpg"><img src="images/miscellaneous/4.jpg" alt="notre damme" title="Paris"/></a>
+			<a class="fancybox" rel="group" href="images/miscellaneous/5.jpg"><img src="images/miscellaneous/5.jpg" alt="people in a cruise" title="Barcelona"/></a>
+			<a class="fancybox" rel="group" href="images/miscellaneous/6.jpg"><img src="images/miscellaneous/6.jpg" alt="eiffel tower behind a bridge" title="Paris"/></a>
+			<a class="fancybox" rel="group" href="images/miscellaneous/7.jpg"><img src="images/miscellaneous/7.jpg" alt="chicago's skyline" title="Chicago"/></a>
+			<a class="fancybox" rel="group" href="images/miscellaneous/8.jpg"><img src="images/miscellaneous/8.jpg" alt="woman dancing in NYC" title="dancer"/></a>
+			<a class="fancybox" rel="group" href="images/miscellaneous/9.jpg"><img src="images/miscellaneous/9.jpg" alt="people sitting in a bridge" title="Paris"/></a>
+			<a class="fancybox" rel="group" href="images/miscellaneous/10.jpg"><img src="images/miscellaneous/10.jpg" alt="different beer bottles" title="Barcelona"/></a>
+			<a class="fancybox" rel="group" href="images/miscellaneous/11.jpg"><img src="images/miscellaneous/11.jpg" alt="picture of a dragonfly" title="Galicia"/></a>
+			<a class="fancybox" rel="group" href="images/miscellaneous/12.jpg"><img src="images/miscellaneous/12.jpg" alt="boats sailing at sunset" title="Los Angeles"/></a>
+			<a class="fancybox" rel="group" href="images/miscellaneous/13.jpg"><img src="images/miscellaneous/13.jpg" alt="picture of a lightbulb" title="Philadelphia"/></a>
+			<a class="fancybox" rel="group" href="images/miscellaneous/14.jpg"><img src="images/miscellaneous/14.jpg" alt="yellow and blue landscape" title="california"/></a>
+			<!--<img src="images/miscellaneous/1.jpg" alt="#" title="#">
 			<img src="images/miscellaneous/2.jpg" alt="#" title="#">
 			<img src="images/miscellaneous/3.jpg" alt="#" title="#">
 			<img src="images/miscellaneous/4.jpg" alt="#" title="#">
@@ -36,7 +60,7 @@
 			<img src="images/miscellaneous/11.jpg" alt="#" title="#">
 			<img src="images/miscellaneous/12.jpg" alt="#" title="#">
 			<img src="images/miscellaneous/13.jpg" alt="#" title="#">
-			<img src="images/miscellaneous/14.jpg" alt="#" title="#">
+			<img src="images/miscellaneous/14.jpg" alt="#" title="#">-->
 		</div>
 	</main>
 
@@ -48,6 +72,12 @@
 		<a href="https://www.linkedin.com/in/inma-galvez-robles-b8191b83"><img class="button" src="images/linkedin.png" alt="link to linkedin" title="Linkedin"></a>
 		<p id="copy">&copy Inma Gálvez Robles</p>
 	</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		$(".fancybox").fancybox();
+		});
+	</script>
 </body>
 
 </html>

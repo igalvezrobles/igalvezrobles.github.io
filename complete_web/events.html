@@ -3,6 +3,16 @@
 	<title>Inma G Photography</title>
 	<link rel="stylesheet" type="text/css" href="css/linksstyle.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 </head>
 <body>
 	<header>
@@ -23,7 +33,16 @@
 	<main>
 		<h2>EVENTS</h2>
 		<div class="clearfix">
-			<img src="images/events/1.jpg" alt="cabaret event picture" title="caberet event">
+			<a class="fancybox" rel="group" href="images/events/1.jpg"><img src="images/events/1.jpg" alt="cabaret event picture" title="caberet event"/></a>
+			<a class="fancybox" rel="group" href="images/events/2.jpg"><img src="images/events/2.jpg" alt="cabaret event picture" title="caberet event"/></a>
+			<a class="fancybox" rel="group" href="images/events/3.jpg"><img src="images/events/3.jpg" alt="cabaret event picture" title="caberet event"/></a>
+			<a class="fancybox" rel="group" href="images/events/4.jpg"><img src="images/events/4.jpg" alt="cabaret event picture" title="caberet event"/></a>
+			<a class="fancybox" rel="group" href="images/events/5.jpg"><img src="images/events/5.jpg" alt="cabaret event picture" title="caberet event"/></a>
+			<a class="fancybox" rel="group" href="images/events/6.jpg"><img src="images/events/6.jpg" alt="cabaret event picture" title="caberet event"/></a>
+			<a class="fancybox" rel="group" href="images/events/7.jpg"><img src="images/events/7.jpg" alt="cabaret event picture" title="caberet event"/></a>
+			<a class="fancybox" rel="group" href="images/events/8.jpg"><img src="images/events/8.jpg" alt="cabaret event picture" title="caberet event"/></a>
+			<a class="fancybox" rel="group" href="images/events/9.jpg"><img src="images/events/9.jpg" alt="cabaret event picture" title="caberet event"/></a>
+			<!--<img src="images/events/1.jpg" alt="cabaret event picture" title="caberet event">
 			<img src="images/events/2.jpg" alt="cabaret event picture" title="caberet event">
 			<img src="images/events/3.jpg" alt="cabaret event picture" title="caberet event">
 			<img src="images/events/4.jpg" alt="cabaret event picture" title="caberet event">
@@ -31,7 +50,7 @@
 			<img src="images/events/6.jpg" alt="cabaret event picture" title="caberet event">
 			<img src="images/events/7.jpg" alt="cabaret event picture" title="caberet event">
 			<img src="images/events/8.jpg" alt="cabaret event picture" title="caberet event">
-			<img src="images/events/9.jpg" alt="cabaret event picture" title="caberet event">
+			<img src="images/events/9.jpg" alt="cabaret event picture" title="caberet event">-->
 		</div>
 	</main>
 
@@ -43,6 +62,12 @@
 		<a href="https://www.linkedin.com/in/inma-galvez-robles-b8191b83"><img class="button" src="images/linkedin.png" alt="link to linkedin" title="Linkedin"></a>
 		<p id="copy">&copy Inma Gálvez Robles</p>
 	</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		$(".fancybox").fancybox();
+		});
+	</script>
 </body>
 
 </html>

@@ -3,6 +3,16 @@
 	<title>Inma G Photography</title>
 	<link rel="stylesheet" type="text/css" href="css/linksstyle.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 </head>
 <body>
 	<header>
@@ -23,7 +33,17 @@
 	<main>
 		<h2>LOVE</h2>
 		<div class="clearfix">
-			<img src="images/love/1.jpg" alt="picture of a couple" title="Jose & Tamara's engagement">
+			<a class="fancybox" rel="group" href="images/love/1.jpg"><img src="images/love/1.jpg" alt="picture of a couple" title="Jose & Tamara's engagement"/></a>
+			<a class="fancybox" rel="group" href="images/love/2.jpg"><img src="images/love/2.jpg" alt="picture of a couple" title="Jose & Tamara's engagement"/></a>
+			<a class="fancybox" rel="group" href="images/love/3.jpg"><img src="images/love/3.jpg" alt="picture of a couple" title="Jose & Tamara's engagement"/></a>
+			<a class="fancybox" rel="group" href="images/love/4.jpg"><img src="images/love/4.jpg" alt="picture of a couple" title="Jose & Tamara's engagement"/></a>
+			<a class="fancybox" rel="group" href="images/love/5.jpg"><img src="images/love/5.jpg" alt="picture of a couple" title="Jose & Tamara's engagement"/></a>
+			<a class="fancybox" rel="group" href="images/love/6.jpg"><img src="images/love/6.jpg" alt="picture of a couple" title="Jose & Tamara's engagement"/></a>
+			<a class="fancybox" rel="group" href="images/love/7.jpg"><img src="images/love/7.jpg" alt="picture of a couple" title="Jose & Tamara's engagement"/></a>
+			<a class="fancybox" rel="group" href="images/love/8.jpg"><img src="images/love/8.jpg" alt="picture of a couple" title="Jose & Tamara's engagement"/></a>
+			<a class="fancybox" rel="group" href="images/love/9.jpg"><img src="images/love/9.jpg" alt="picture of a couple" title="Jose & Tamara's engagement"/></a>
+			<a class="fancybox" rel="group" href="images/love/10.jpg"><img src="images/love/10.jpg" alt="picture of a couple" title="Jose & Tamara's engagement"/></a>
+			<!--<img src="images/love/1.jpg" alt="picture of a couple" title="Jose & Tamara's engagement">
 			<img src="images/love/2.jpg" alt="picture of a couple" title="Jose & Tamara's engagement">
 			<img src="images/love/3.jpg" alt="picture of a couple" title="Jose & Tamara's engagement">
 			<img src="images/love/4.jpg" alt="picture of a couple" title="Jose & Tamara's engagement">
@@ -32,7 +52,7 @@
 			<img src="images/love/7.jpg" alt="picture of a couple" title="Jose & Tamara's engagement">
 			<img src="images/love/8.jpg" alt="picture of a couple" title="Jose & Tamara's engagement">
 			<img src="images/love/9.jpg" alt="picture of a couple" title="Jose & Tamara's engagement">
-			<img src="images/love/10.jpg" alt="picture of a couple" title="Jose & Tamara's engagement">
+			<img src="images/love/10.jpg" alt="picture of a couple" title="Jose & Tamara's engagement">-->
 		</div>
 	</main>
 
@@ -44,6 +64,12 @@
 		<a href="https://www.linkedin.com/in/inma-galvez-robles-b8191b83"><img class="button" src="images/linkedin.png" alt="link to linkedin" title="Linkedin"></a>
 		<p id="copy">&copy Inma Gálvez Robles</p>
 	</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		$(".fancybox").fancybox();
+		});
+	</script>
 </body>
 
 </html>

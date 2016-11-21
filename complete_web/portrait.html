@@ -3,6 +3,15 @@
 	<title>Inma G Photography</title>
 	<link rel="stylesheet" type="text/css" href="css/linksstyle.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 </head>
 <body>
 	<header>
@@ -23,7 +32,17 @@
 	<main>
 		<h2>PORTRAIT</h2>
 		<div class="clearfix">
-			<img src="images/portrait/1.jpg" alt="portrait" title="Elena">
+			<a class="fancybox" rel="group" href="images/portrait/1.jpg"><img src="images/portrait/1.jpg" alt="portrait" title="Elena"/></a>
+			<a class="fancybox" rel="group" href="images/portrait/2.jpg"><img src="images/portrait/2.jpg" alt="portrait" title="Isabella"/></a>
+			<a class="fancybox" rel="group" href="images/portrait/3.jpg"><img src="images/portrait/3.jpg" alt="portrait" title="Jennifer"/></a>
+			<a class="fancybox" rel="group" href="images/portrait/4.jpg"><img src="images/portrait/4.jpg" alt="portrait" title="Inma"/></a>
+			<a class="fancybox" rel="group" href="images/portrait/5.jpg"><img src="images/portrait/5.jpg" alt="portrait" title="Laura"/></a>
+			<a class="fancybox" rel="group" href="images/portrait/6.jpg"><img src="images/portrait/6.jpg" alt="portrait" title="Inma"/></a>
+			<a class="fancybox" rel="group" href="images/portrait/7.jpg"><img src="images/portrait/7.jpg" alt="portrait" title="Lucia"/></a>
+			<a class="fancybox" rel="group" href="images/portrait/8.jpg"><img src="images/portrait/8.jpg" alt="portrait" title="Laura"/></a>
+			<a class="fancybox" rel="group" href="images/portrait/9.jpg"><img src="images/portrait/9.jpg" alt="portrait" title="Jose & Tamara"/></a>
+			<a class="fancybox" rel="group" href="images/portrait/10.jpg"><img src="images/portrait/10.jpg" alt="portrait" title="Friends"/></a>
+			<!--<img src="images/portrait/1.jpg" alt="portrait" title="Elena">
 			<img src="images/portrait/2.jpg" alt="portrait" title="Isabella">
 			<img src="images/portrait/3.jpg" alt="portrait" title="Jennifer">
 			<img src="images/portrait/4.jpg" alt="portrait" title="Inma">
@@ -32,7 +51,7 @@
 			<img src="images/portrait/7.jpg" alt="portrait" title="Lucía">
 			<img src="images/portrait/8.jpg" alt="portrait" title="Laura">
 			<img src="images/portrait/9.jpg" alt="portrait" title="Jose & Tamara">
-			<img src="images/portrait/10.jpg" alt="portrait" title="Friends">
+			<img src="images/portrait/10.jpg" alt="portrait" title="Friends">-->
 		</div>
 	</main>
 
@@ -44,6 +63,12 @@
 		<a href="https://www.linkedin.com/in/inma-galvez-robles-b8191b83"><img class="button" src="images/linkedin.png" alt="link to linkedin" title="Linkedin"></a>
 		<p id="copy">&copy Inma Gálvez Robles</p>
 	</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		$(".fancybox").fancybox();
+		});
+	</script>
 </body>
 
 </html>
